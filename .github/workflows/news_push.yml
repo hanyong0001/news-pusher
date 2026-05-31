@@ -1,0 +1,39 @@
+name: 新闻热点推送
+
+on:
+  schedule:
+    # 北京时间 08:00 = UTC 00:00
+    - cron: '0 0 * * *'
+    # 北京时间 12:30 = UTC 04:30
+    - cron: '30 4 * * *'
+    # 北京时间 20:00 = UTC 12:00
+    - cron: '0 12 * * *'
+  # 也支持手动触发（在 GitHub 页面点按钮）
+  workflow_dispatch:
+
+jobs:
+  push-news:
+    name: 抓取新闻并推送微信
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 安装依赖
+        run: |
+          pip install -r requirements.txt
+
+      - name: 抓取新闻并推送
+        env:
+          WXPUSHER_APP_TOKEN: ${{ secrets.WXPUSHER_APP_TOKEN }}
+          WXPUSHER_UIDS: ${{ secrets.WXPUSHER_UIDS }}
+          TZ: 'Asia/Shanghai'
+        run: |
+          python news_pusher.py once
