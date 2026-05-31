@@ -1,13 +1,26 @@
 {
   "wxpusher": {
-    "appToken": "AT_dC2ChQlLM1kUXmRq3SX9JOb8YUNsKRdH",
-    "uid": ["UID_OQAsf5pbWevjzy7AgzxoiaiASe1A"]
+    "appToken": "YOUR_WXPUSHER_APP_TOKEN",
+    "uid": [
+      "YOUR_WXPUSHER_UID"
+    ]
   },
   "categories": {
     "军事_战争": {
       "enabled": true,
       "max_items": 5,
-      "keywords": ["战争", "冲突", "军事", "国防", "军队", "导弹", "坦克", "战机", "航母", "核武"]
+      "keywords": [
+        "战争",
+        "冲突",
+        "军事",
+        "国防",
+        "军队",
+        "导弹",
+        "坦克",
+        "战机",
+        "航母",
+        "核武"
+      ]
     },
     "科技": {
       "enabled": true,
@@ -22,16 +35,40 @@
   },
   "rss_sources": {
     "军事_战争": [
-      {"name": "Solidot", "url": "https://www.solidot.org/index.rss", "lang": "zh"}
+      {
+        "name": "Solidot",
+        "url": "https://www.solidot.org/index.rss",
+        "lang": "zh"
+      }
     ],
     "科技": [
-      {"name": "36氪", "url": "https://36kr.com/feed", "lang": "zh"},
-      {"name": "爱范儿", "url": "https://www.ifanr.com/feed", "lang": "zh"},
-      {"name": "少数派", "url": "https://sspai.com/feed", "lang": "zh"},
-      {"name": "钛媒体", "url": "https://www.tmtpost.com/rss.xml", "lang": "zh"}
+      {
+        "name": "36氪",
+        "url": "https://36kr.com/feed",
+        "lang": "zh"
+      },
+      {
+        "name": "爱范儿",
+        "url": "https://www.ifanr.com/feed",
+        "lang": "zh"
+      },
+      {
+        "name": "少数派",
+        "url": "https://sspai.com/feed",
+        "lang": "zh"
+      },
+      {
+        "name": "钛媒体",
+        "url": "https://www.tmtpost.com/rss.xml",
+        "lang": "zh"
+      }
     ],
     "财经": [
-      {"name": "36氪快讯", "url": "https://36kr.com/feed-newsflash", "lang": "zh"}
+      {
+        "name": "36氪快讯",
+        "url": "https://36kr.com/feed-newsflash",
+        "lang": "zh"
+      }
     ]
   },
   "stock_analysis": {
