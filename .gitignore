@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# 选股结果（太大，不提交）
+选股结果/
+
+# 本地日志
+*.log
+
+# 运行时缓存
+.seen_ids.json
+.news_cache.json
+
+# 系统文件
+Thumbs.db
+.DS_Store
