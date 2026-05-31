@@ -1,0 +1,54 @@
+{
+  "wxpusher": {
+    "appToken": "AT_dC2ChQlLM1kUXmRq3SX9JOb8YUNsKRdH",
+    "uid": ["UID_OQAsf5pbWevjzy7AgzxoiaiASe1A"]
+  },
+  "categories": {
+    "军事_战争": {
+      "enabled": true,
+      "max_items": 5,
+      "keywords": ["战争", "冲突", "军事", "国防", "军队", "导弹", "坦克", "战机", "航母", "核武"]
+    },
+    "科技": {
+      "enabled": true,
+      "max_items": 5,
+      "keywords": []
+    },
+    "财经": {
+      "enabled": true,
+      "max_items": 5,
+      "keywords": []
+    }
+  },
+  "rss_sources": {
+    "军事_战争": [
+      {"name": "Solidot", "url": "https://www.solidot.org/index.rss", "lang": "zh"}
+    ],
+    "科技": [
+      {"name": "36氪", "url": "https://36kr.com/feed", "lang": "zh"},
+      {"name": "爱范儿", "url": "https://www.ifanr.com/feed", "lang": "zh"},
+      {"name": "少数派", "url": "https://sspai.com/feed", "lang": "zh"},
+      {"name": "钛媒体", "url": "https://www.tmtpost.com/rss.xml", "lang": "zh"}
+    ],
+    "财经": [
+      {"name": "36氪快讯", "url": "https://36kr.com/feed-newsflash", "lang": "zh"}
+    ]
+  },
+  "stock_analysis": {
+    "enabled": true,
+    "max_stocks_per_concept": 5,
+    "max_concepts_per_news": 3
+  },
+  "push_schedule": {
+    "morning": "08:00",
+    "noon": "12:30",
+    "evening": "20:00",
+    "breaking_news": true
+  },
+  "general": {
+    "fetch_interval_minutes": 30,
+    "max_title_length": 60,
+    "max_description_length": 150,
+    "language": "zh"
+  }
+}
